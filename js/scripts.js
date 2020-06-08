@@ -5,10 +5,12 @@ $(document).ready(function() {
     const favArchitecture = $("input#architecture").val();
     const favAnimal = $("input#animal").val();
     const favMovie = $("input#movie").val();
+    const favArray = [favBand,favSeason,favArchitecture,favAnimal,favMovie];
+    
+    let resultArray = [];
+    resultArray.push(favArray[1],favArray[0],favArray[2]);
 
-    const favArray = [favBand,favSeason,favArchitecture,favAnimal,favMovie]
-
-    $("#results").text(favArray);
+    $("#results").text(resultArray);
 
   (event).preventDefault();
   });
